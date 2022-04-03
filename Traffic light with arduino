@@ -1,0 +1,22 @@
+int redpin = 13;              //задаём пины светодиодов
+int yellowpin = 12;
+int greenpin = 11;
+void setup() {
+pinMode(redpin, OUTPUT);      //переключаем режимы пинов всех светодиодов на выход
+pinMode(yellowpin, OUTPUT);
+pinMode(greenpin, OUTPUT);}
+void loop() {
+digitalWrite(redpin, LOW);    //выключаем все светодиоды
+digitalWrite(yellowpin, LOW); 
+digitalWrite(greenpin, LOW);
+digitalWrite(redpin, HIGH);   //включаем красный светодиод
+delay(15000);                 //ждём 15 секунд
+digitalWrite(yellowpin, HIGH);//включаем жёлтый светодиод
+delay(2000);                  //ждём 2 секунды
+digitalWrite(redpin, LOW);    //выключаем красный светодиод
+digitalWrite(yellowpin, LOW); //выключаем жёлтый светодиод
+digitalWrite(greenpin, HIGH); //включаем зелёный светодиод
+delay(15000);                    //ждём 15 секунд
+digitalWrite(greenpin, LOW);  //выключаем зелёный светодиод
+digitalWrite(yellowpin, HIGH);//включаем жёлтый светодиод
+delay(2000);}                 //ждём две секунды
