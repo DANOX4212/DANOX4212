@@ -1,0 +1,2 @@
+- Hi, I’m @DANOX4212
+- I’m interested in computers, soldering
